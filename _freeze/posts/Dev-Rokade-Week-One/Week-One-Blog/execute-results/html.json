@@ -1,0 +1,14 @@
+{
+  "hash": "903f60dc1efd09d3e3c9ae879afc36ca",
+  "result": {
+    "markdown": "---\ntitle: \"Week One Blog\"\nauthor: \"Dev Rokade\"\ndate: \"2023-05-23\"\ncategory: \"Week One\"\n---\n\n\n# I'm currently very dehydrated.\n\nThis is *not* a heading\n\n\n::: {.cell}\n\n```{.r .cell-code}\nprint(\"Hello\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"Hello\"\n```\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(dplyr)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
