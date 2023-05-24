@@ -1,0 +1,36 @@
+---
+title: "AI Local Foods Weekly Wrap Up"
+author: "Dev Rokade"
+date: "2023-05-24"
+categories: "Week One"
+---
+
+# Week 1 Team Highlights
+
+## Completed Objectives
+
+1.  Completed Team exercise on first day. Analyzed the areas where each team member was proficient in and the areas where we need to work on.
+
+2.  Team members started working on datacamp. Special shoutout to Aaron for being the datacamp champ of our group!
+
+3.  Attended meeting with Courtney Long to discuss project expectations and also clarified questions regarding the project
+
+## Works in Progress
+
+None in progress for Week 1 except datacamp. Outputs of first exercise attached below.
+
+![](images/Screen%20Shot%202023-05-17%20at%2010.46.19%20AM.png)
+
+![](images/Screen%20Shot%202023-05-17%20at%2010.45.11%20AM.png)
+
+![](images/Screen%20Shot%202023-05-17%20at%2010.23.25%20AM.png)
+
+## DSPG Questions
+
+Treat this section as a place to put all of the different questions that team members have about the work they've been completing so far. This can be things like;
+
+-   How to best create a certain plot.
+-   What package/module might be the best fit for the task.
+-   An idea that can be discussed with the larger group for additional thoughts.
+
+## 
