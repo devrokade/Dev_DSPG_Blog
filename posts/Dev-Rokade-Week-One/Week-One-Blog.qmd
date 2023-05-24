@@ -2,18 +2,23 @@
 title: "Week One Blog"
 author: "Dev Rokade"
 date: "2023-05-23"
-category: "Week One"
+categories: "Week One"
 ---
 
-# I'm currently very dehydrated.
+# Week One Highlights
 
-This is *not* a heading
+In week one, I first made sure all my github and datacamp accounts were in order. However, due to some issues with datacamp, did not get a head start on training.
 
-```{r}
-print("Hello")
-```
+Day 1: Did k-means clustering and statistical analysis on the flight data of scheduled flights and actual flights in 90-minute data science exercise. Presented findings to the whole DSPG team.
 
-```{r, warning=FALSE, message=FALSE}
-library(dplyr)
+![](images/Screen%20Shot%202023-05-17%20at%2010.56.16%20AM.png)
 
-```
+![](images/Screen%20Shot%202023-05-17%20at%2010.55.59%20AM.png)
+
+![](images/Screen%20Shot%202023-05-17%20at%2010.51.44%20AM.png)
+
+![](images/Screen%20Shot%202023-05-17%20at%2010.46.19%20AM.png)
+
+Day 2: Went through past DSPG projects.
+
+Day 3: Met with Courtney Long to discuss project expectations, fixed DataCamp access issues by meeting Rakesh and Chris

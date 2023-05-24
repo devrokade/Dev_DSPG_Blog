@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Week One">Week One <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -166,7 +166,10 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1684818000000" data-listing-file-modified-sort="1684857692796" data-listing-reading-time-sort="0.035">
+<div class="quarto-post image-right" data-index="0" data-categories="Week One" data-listing-date-sort="1684818000000" data-listing-file-modified-sort="1684935283676" data-listing-reading-time-sort="0.42">
+<div class="thumbnail">
+<p><a href="./posts/Dev-Rokade-Week-One/Week-One-Blog.html"> <img src="./posts/Dev-Rokade-Week-One/images/Screen Shot 2023-05-17 at 10.56.16 AM.png" class="thumnail-image"> </a></p>
+</div>
 <div class="body">
 <a href="./posts/Dev-Rokade-Week-One/Week-One-Blog.html">
 <h3 class="no-anchor listing-title">
@@ -175,8 +178,15 @@ Week One Blog
 <div class="listing-subtitle">
 
 </div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Week One'); return false;">
+Week One
+</div>
+</div>
+<a href="./posts/Dev-Rokade-Week-One/Week-One-Blog.html">
 <div class="listing-description">
-This is <em>not</em> a heading
+In week one, I first made sure all my github and datacamp accounts were in order. However, due to some issues with datacamp, did not get a head start on training.
 </div>
 </a>
 </div>
