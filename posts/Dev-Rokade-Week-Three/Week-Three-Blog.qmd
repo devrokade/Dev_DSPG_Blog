@@ -1,8 +1,8 @@
 ---
 title: "Week Three Blog"
 author: "Dev Rokade"
-date: "2023-05-31"
-categories: "Week One"
+date: "2023-06-01"
+categories: "Week Three"
 ---
 
 # Week Three Highlights
@@ -11,4 +11,8 @@ We had a long weekend so Monday was a change than usual, and I got to sleep in!
 
 Tuesday- I was out of office due to health reasons
 
-Wednesday- Worked on collecting data from Iowa Grocers excel file for pirces on eggs, bacon and heirloom tomatoes. Finished cities in Iowa starting from the letter C and finished that. Proceeded to work on cities from letter I. 
+Wednesday- Worked on collecting data from Iowa Grocers excel file for pirces on eggs, bacon and heirloom tomatoes. Finished cities in Iowa starting from the letter C and finished that. Proceeded to work on cities from letter I. Completed cities from O to R and W as well.
+
+Finished Datacamp Web Scraping Course.
+
+![](images/Screenshot%202023-06-01%20at%203.32.15%20PM.png)
