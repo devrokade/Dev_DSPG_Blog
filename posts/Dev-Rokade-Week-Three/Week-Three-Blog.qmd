@@ -9,10 +9,65 @@ categories: "Week Three"
 
 We had a long weekend so Monday was a change than usual, and I got to sleep in!
 
-Tuesday- I was out of office due to health reasons
+Tuesday and Wednesday- I was out of office due to health reasons
 
-Wednesday- Worked on collecting data from Iowa Grocers excel file for pirces on eggs, bacon and heirloom tomatoes. Finished cities in Iowa starting from the letter C and finished that. Proceeded to work on cities from letter I. Completed cities from O to R and W as well.
+Thursday- Worked on collecting data from Iowa Grocers excel file for prices on eggs, bacon and heirloom tomatoes. Finished cities in Iowa starting from the letter C and finished that. Proceeded to work on cities from letter I. Completed cities from O to R and W as well.
 
 Finished Datacamp Web Scraping Course.
 
 ![](images/Screenshot%202023-06-01%20at%203.32.15%20PM.png)
+
+Friday- Started working on developing a webscraping script in Python using BeautifulSoup, requests and pandas.
+
+```{python, eval=FALSE}
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+```
+
+```{python, eval=FALSE}
+# Read the input Excel file
+input_file = "grocery_websites.xlsx"
+df = pd.read_excel(input_file)
+```
+
+```{python, eval=FALSE}
+# Create a new DataFrame to store the results
+result_df = pd.DataFrame(columns=["Website", "Product", "Price"])
+```
+
+```{python, eval=FALSE}
+# Scrape prices for each website
+for index, row in df.iterrows():
+    website = row["Website"]
+    product = row["Product"]
+    url = row["URL"]
+
+try:
+        # Send a GET request to the website
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, "html.parser")
+        
+        # Find the price element on the page
+        price_element = soup.find("span", class_="price-amount")
+        
+        if price_element:
+            price = price_element.text.strip()
+            result_df = result_df.append({"Website": website, "Product": product, "Price": price}, ignore_index=True)
+        else:
+            result_df = result_df.append({"Website": website, "Product": product, "Price": "Not found"}, ignore_index=True)
+    
+except requests.exceptions.RequestException as e:
+        print(f"Error scraping {website}: {e}")
+        result_df = result_df.append({"Website": website, "Product": product, "Price": "Error"}, ignore_index=True)
+
+
+```
+
+```{python, eval=FALSE}
+# Write the results to a new Excel file
+output_file = "grocery_prices.xlsx"
+result_df.to_excel(output_file, index=False)
+```
+
+This is still in its working phase so hasn't been finished yet, but working on it so that web scraping gets as autonomous as possible.
