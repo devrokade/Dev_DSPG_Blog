@@ -6,3 +6,67 @@ categories: "Week Two"
 ---
 
 # Week Two Highlights
+Here is some of the tidycensus work that I performed
+```{r}
+library(tidycensus)
+library(ggplot2)
+library(tidyverse)
+library(scales)
+library(plotly)
+library(ggiraph) 
+```
+
+```{r}
+median_income <- get_acs(
+  geography = "county",
+  variables = "B19013_001",
+  state = "IA", 
+  year = 2021
+)
+medinc_data <- median_income %>%
+  #reducing the number of countys the graph can display
+  slice(floor(99 * 0.25):floor(99 * 0.75)+1) %>%
+  #ordering from estimate highest to estimate lowest
+  arrange(desc(estimate))
+
+```
+```{r}
+median_barplot <- ggplot(medinc_data, aes(x = estimate, 
+                                    y = reorder(NAME, estimate),
+                                    tooltip = estimate,
+                                    data_id = GEOID)) +
+  geom_errorbar(aes(xmin = estimate - moe, 
+                    xmax = estimate + moe),
+                    width = 0.75, 
+                    size = 1) + 
+  geom_point_interactive(color = "red", size = 1.5) +
+  scale_x_continuous(labels = label_dollar()) + 
+  labs(title = "Plot describing median income by counties in the State of Iowa",
+       x = "Estimated median Income",
+       y = "Counties in Iowa") + 
+  theme_minimal(base_size = 8)
+
+```
+```{r}
+mapping_median <- get_acs(
+  geography = "tract",
+  variables = "B19013_001",
+  state = "IA",
+  year = 2021,
+  geometry = TRUE
+)
+```
+
+```{r}
+
+median_map <- ggplot(mapping_median, aes(fill = estimate)) + 
+  geom_sf() + 
+  theme_void() + 
+  scale_fill_viridis_c(option = "H", n.breaks = 10) + 
+  labs(title = "Mapping median income by census in the State of Iowa",
+       subtitle = "",
+       fill = "ACS estimates")
+median_barplot
+median_map
+```
+
