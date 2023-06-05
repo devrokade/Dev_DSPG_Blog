@@ -65,7 +65,7 @@ median_map <- ggplot(mapping_median, aes(fill = estimate)) +
   scale_fill_viridis_c(option = "H", n.breaks = 10) + 
   labs(title = "Mapping median income by census in the State of Iowa",
        subtitle = "",
-       fill = "ACS estimates")
+       fill = "Census count")
 median_barplot
 median_map
 ```
