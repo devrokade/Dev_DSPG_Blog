@@ -69,4 +69,4 @@ median_map <- ggplot(mapping_median, aes(fill = estimate)) +
 median_barplot
 median_map
 ```
-
+Also worked on completing DataCamp courses and added on more than 10000 XP.
