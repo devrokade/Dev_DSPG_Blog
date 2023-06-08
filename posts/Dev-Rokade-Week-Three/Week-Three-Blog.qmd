@@ -19,24 +19,36 @@ Finished Datacamp Web Scraping Course.
 
 Friday- Started working on developing a webscraping script in Python using BeautifulSoup, requests and pandas.
 
-```{python, eval=FALSE}
+
+```{python}
+#| eval: false
+
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 ```
 
-```{python, eval=FALSE}
+
+```{python}
+#| eval: false
+
 # Read the input Excel file
 input_file = "grocery_websites.xlsx"
 df = pd.read_excel(input_file)
 ```
 
-```{python, eval=FALSE}
+
+```{python}
+#| eval: false
+
 # Create a new DataFrame to store the results
 result_df = pd.DataFrame(columns=["Website", "Product", "Price"])
 ```
 
-```{python, eval=FALSE}
+
+```{python}
+#| eval: false
+
 # Scrape prices for each website
 for index, row in df.iterrows():
     website = row["Website"]
@@ -64,7 +76,10 @@ except requests.exceptions.RequestException as e:
 
 ```
 
-```{python, eval=FALSE}
+
+```{python}
+#| eval: false
+
 # Write the results to a new Excel file
 output_file = "grocery_prices.xlsx"
 result_df.to_excel(output_file, index=False)
