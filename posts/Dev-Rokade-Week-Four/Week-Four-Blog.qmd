@@ -1,0 +1,18 @@
+---
+title: "Week Three Blog"
+author: "Dev Rokade"
+date: "2023-06-01"
+categories: "Week Three"
+---
+
+# Week Four Highlights
+
+Monday- Collecting data for the project and working on finding data sources for Heirloom Tomatoes.
+
+Tuesday- Collected in person data at Slater to analyze the housing conditions and amenities there in the first half of the day. Second half was remote where I worked on compiling and cleaning the data.
+
+Wednesday- Created a script which cleaned scraped prices from Fareway Market website for locations Ames, Fort Dodge, Davenport, Iowa City, New Hampton, Clear Lake, Sioux City, Shenandoah in Iowa.
+
+Thursday- Worked to get more data output, discussed presentation and blog wrap ups with team.
+
+![](images/Screenshot%202023-06-08%20at%203.41.59%20PM.png)
